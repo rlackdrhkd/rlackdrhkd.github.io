@@ -4,18 +4,27 @@ project:
 
 website:
   description: "A blog built with Quarto"
-  site-url: https://your-website-url.example.com # you must change this appropriately for RSS feeds to work properly
+  site-url: https://rlackdrhkd.github.io
   title: "Hslee's Archive"
   navbar:
+    background: "#446E9B"
+    foreground: "#ffffff"
     right:
       - about.qmd
       - icon: github
         href: https://github.com/
-      - icon: bluesky
-        href: https://bsky.app/
+      - icon: linkedin
+        href: https://www.linkedin.com/in/rlackdrhkd
+  page-footer:
+    background: "#f5f5f5"
+    center: "© 2026 Hslee's Archive · Built with [Quarto](https://quarto.org)"
+
 format:
   html:
-    theme: spacelab        # ✅ spacelab 테마 적용
+    theme: spacelab
+    css: styles.css
     highlight-style: github
-    code-copy: true        # 코드 복사 버튼
-    toc: true              # 목차 자동 생성
+    code-copy: true
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
